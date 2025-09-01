@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kameruner.github.io/online-buro/sitemap.xml
