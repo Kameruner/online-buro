@@ -1,49 +1,69 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>ONLINE BURO — Services Fiscaux</title>
-<meta name="description" content="Services fiscaux en ligne — immatriculation NIU, Attestation de Conformité Fiscale (ACF), télédéclaration IRPP, paiements. Contact rapide via WhatsApp.">
-<link rel="icon" href="images/Flag_of_Cameroon.svg">
-<style>
-:root{
-  --bg:#f6f8fc;--primary:#0b4ed6;--nav:#0a3b8f;--card-bg:#ffffff;--muted:#6b7280;--radius:14px;--maxw:1100px;
-  font-family:'Segoe UI',Roboto,Arial,sans-serif;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:#0f1724;line-height:1.5}
-.wrap{max-width:var(--maxw);margin:0 auto;padding:28px}
-header.site-header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,0.96);backdrop-filter:blur(6px);border-bottom:1px solid rgba(15,23,36,0.06);box-shadow:0 2px 8px rgba(0,0,0,0.04)}
-.site-header .container{display:flex;align-items:center;justify-content:space-between;max-width:var(--maxw);margin:0 auto;padding:14px 28px}
-.logo-area{display:flex;align-items:center;gap:10px}
-.logo-icon{width:36px;height:36px;flex-shrink:0;border-radius:8px;background:linear-gradient(135deg,#007a5e,#ce1126);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;position:relative;overflow:hidden}
-.logo-icon::after{content:'';position:absolute;top:0;left:50%;width:4px;height:100%;background:#fcd116}
-.logo-text{font-weight:700;font-size:1.1rem;letter-spacing:0.4px}
-nav.top-nav{display:flex;gap:18px;align-items:center}
-nav.top-nav a{color:var(--nav);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:8px;transition:background 0.3s}
-nav.top-nav a:hover{background:rgba(11,78,194,0.06)}
-#lang-toggle{padding:6px 10px;border-radius:8px;border:none;background:#fcd116;font-weight:600;cursor:pointer}
-.hero{max-width:var(--maxw);margin:26px auto;padding:40px;border-radius:var(--radius);background:linear-gradient(90deg,#ffffff,#f8fbff);box-shadow:0 10px 30px rgba(11,78,194,0.06);display:flex;gap:24px;align-items:center;border-top:6px solid #007a5e;border-image:linear-gradient(90deg,#007a5e,#fcd116,#ce1126) 1}
-.hero h1{margin-bottom:8px;font-size:1.8rem;color:var(--nav)}
-.hero p{margin-bottom:16px;color:var(--muted);font-size:1.05rem}
-.cta-row{display:flex;gap:12px;align-items:center}
-.btn-primary{background:var(--primary);color:white;padding:12px 20px;border-radius:10px;border:0;font-weight:700;cursor:pointer;box-shadow:0 8px 20px rgba(11,78,194,0.14);transition:transform 0.2s, box-shadow 0.2s}
-.btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(11,78,194,0.2)}
-.btn-outline{background:transparent;border:1px solid rgba(15,23,36,0.12);padding:11px 18px;border-radius:10px;cursor:pointer;color:var(--muted)}
-.btn-outline:hover{border-color:var(--primary);color:var(--primary)}
-.services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;margin-top:20px}
-.service-card{background:var(--card-bg);padding:20px;border-radius:var(--radius);box-shadow:0 8px 18px rgba(15,23,36,0.06);display:flex;flex-direction:column;gap:14px;transition:transform .18s ease,box-shadow .18s ease;border-top:4px solid transparent;text-decoration:none;color:inherit}
-.service-card:hover{transform:translateY(-6px);box-shadow:0 18px 30px rgba(15,23,36,0.08);border-top:4px solid #fcd116}
-.service-head{display:flex;align-items:center;gap:12px}
-.service-title{font-size:1.05rem;font-weight:700;color:#0f1724}
-.service-desc{color:var(--muted);font-size:0.95rem}
-.doc-window{width:100%;height:230px;border-radius:10px;border:1px solid rgba(10,20,30,0.06);overflow:hidden;padding:0;background:linear-gradient(180deg,#fff,#fbfdff);display:flex;align-items:center;justify-content:center}
-.doc-img{width:100%;height:auto;display:block;object-fit:cover}
-footer{max-width:var(--maxw);margin:38px auto 80px;padding:18px 28px;color:var(--muted);font-size:0.95rem;border-top:4px solid #007a5e;border-image:linear-gradient(90deg,#007a5e,#fcd116,#ce1126) 1;display:flex;justify-content:space-between;align-items:center}
-.whatsapp-badge{position:fixed;right:20px;bottom:24px;background:#25D366;color:white;padding:12px 14px;border-radius:999px;display:flex;align-items:center;gap:10px;box-shadow:0 12px 30px rgba(37,211,102,0.18);cursor:pointer;z-index:60}
-@media (max-width:700px){.hero{flex-direction:column;text-align:center}.site-header .container{padding:10px 14px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- SEO -->
+  <title>ONLINE BURO — Services fiscaux en ligne au Cameroun (IRPP, NIU, ACF, Paiement)</title>
+  <meta name="description" content="Déclarez et payez vos impôts au Cameroun avec Online Buro. Services fiscaux en ligne : IRPP, Attestation de Conformité Fiscale (ACF), Immatriculation NIU. Assistance rapide et sécurisée via WhatsApp.">
+  <meta name="keywords" content="impôts Cameroun, déclaration IRPP, paiement impôts, attestation fiscale, immatriculation NIU, ACF, Online Buro">
+  <meta name="author" content="ONLINE BURO">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="ONLINE BURO — Services fiscaux au Cameroun">
+  <meta property="og:description" content="Déclarez et payez vos impôts en ligne : IRPP, NIU, ACF, paiement fiscal au Cameroun.">
+  <meta property="og:image" content="https://kameruner.github.io/online-buro/images/preview.jpg">
+  <meta property="og:url" content="https://kameruner.github.io/online-buro/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ONLINE BURO — Services fiscaux au Cameroun">
+  <meta name="twitter:description" content="IRPP, ACF, NIU et paiement d’impôts en ligne au Cameroun. Assistance rapide via WhatsApp.">
+  <meta name="twitter:image" content="https://kameruner.github.io/online-buro/images/preview.jpg">
+
+  <link rel="icon" href="images/Flag_of_Cameroon.svg">
+
+  <style>
+    /* styles existants conservés */
+    :root{
+      --bg:#f6f8fc;--primary:#0b4ed6;--nav:#0a3b8f;--card-bg:#ffffff;--muted:#6b7280;--radius:14px;--maxw:1100px;
+      font-family:'Segoe UI',Roboto,Arial,sans-serif;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{background:var(--bg);color:#0f1724;line-height:1.5}
+    .wrap{max-width:var(--maxw);margin:0 auto;padding:28px}
+    header.site-header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,0.96);backdrop-filter:blur(6px);border-bottom:1px solid rgba(15,23,36,0.06);box-shadow:0 2px 8px rgba(0,0,0,0.04)}
+    .site-header .container{display:flex;align-items:center;justify-content:space-between;max-width:var(--maxw);margin:0 auto;padding:14px 28px}
+    .logo-area{display:flex;align-items:center;gap:10px}
+    .logo-icon{width:36px;height:36px;flex-shrink:0;border-radius:8px;background:linear-gradient(135deg,#007a5e,#ce1126);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;position:relative;overflow:hidden}
+    .logo-icon::after{content:'';position:absolute;top:0;left:50%;width:4px;height:100%;background:#fcd116}
+    .logo-text{font-weight:700;font-size:1.1rem;letter-spacing:0.4px}
+    nav.top-nav{display:flex;gap:18px;align-items:center}
+    nav.top-nav a{color:var(--nav);text-decoration:none;font-weight:600;padding:8px 12px;border-radius:8px;transition:background 0.3s}
+    nav.top-nav a:hover{background:rgba(11,78,194,0.06)}
+    #lang-toggle{padding:6px 10px;border-radius:8px;border:none;background:#fcd116;font-weight:600;cursor:pointer}
+    .hero{max-width:var(--maxw);margin:26px auto;padding:40px;border-radius:var(--radius);background:linear-gradient(90deg,#ffffff,#f8fbff);box-shadow:0 10px 30px rgba(11,78,194,0.06);display:flex;gap:24px;align-items:center;border-top:6px solid #007a5e;border-image:linear-gradient(90deg,#007a5e,#fcd116,#ce1126) 1}
+    .hero h1{margin-bottom:8px;font-size:1.8rem;color:var(--nav)}
+    .hero p{margin-bottom:16px;color:var(--muted);font-size:1.05rem}
+    .cta-row{display:flex;gap:12px;align-items:center}
+    .btn-primary{background:var(--primary);color:white;padding:12px 20px;border-radius:10px;border:0;font-weight:700;cursor:pointer;box-shadow:0 8px 20px rgba(11,78,194,0.14);transition:transform 0.2s, box-shadow 0.2s}
+    .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 24px rgba(11,78,194,0.2)}
+    .btn-outline{background:transparent;border:1px solid rgba(15,23,36,0.12);padding:11px 18px;border-radius:10px;cursor:pointer;color:var(--muted)}
+    .btn-outline:hover{border-color:var(--primary);color:var(--primary)}
+    .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px;margin-top:20px}
+    .service-card{background:var(--card-bg);padding:20px;border-radius:var(--radius);box-shadow:0 8px 18px rgba(15,23,36,0.06);display:flex;flex-direction:column;gap:14px;transition:transform .18s ease,box-shadow .18s ease;border-top:4px solid transparent;text-decoration:none;color:inherit}
+    .service-card:hover{transform:translateY(-6px);box-shadow:0 18px 30px rgba(15,23,36,0.08);border-top:4px solid #fcd116}
+    .service-head{display:flex;align-items:center;gap:12px}
+    .service-title{font-size:1.05rem;font-weight:700;color:#0f1724}
+    .service-desc{color:var(--muted);font-size:0.95rem}
+    .doc-window{width:100%;height:230px;border-radius:10px;border:1px solid rgba(10,20,30,0.06);overflow:hidden;padding:0;background:linear-gradient(180deg,#fff,#fbfdff);display:flex;align-items:center;justify-content:center}
+    .doc-img{width:100%;height:auto;display:block;object-fit:cover}
+    footer{max-width:var(--maxw);margin:38px auto 80px;padding:18px 28px;color:var(--muted);font-size:0.95rem;border-top:4px solid #007a5e;border-image:linear-gradient(90deg,#007a5e,#fcd116,#ce1126) 1;display:flex;justify-content:space-between;align-items:center}
+    .whatsapp-badge{position:fixed;right:20px;bottom:24px;background:#25D366;color:white;padding:12px 14px;border-radius:999px;display:flex;align-items:center;gap:10px;box-shadow:0 12px 30px rgba(37,211,102,0.18);cursor:pointer;z-index:60}
+    @media (max-width:700px){.hero{flex-direction:column;text-align:center}.site-header .container{padding:10px 14px}}
+  </style>
 </head>
 <body>
 <header class="site-header">
@@ -58,6 +78,7 @@ footer{max-width:var(--maxw);margin:38px auto 80px;padding:18px 28px;color:var(-
     </div>
     <nav class="top-nav">
       <a href="#services">Services</a>
+      <a href="#faq">FAQ</a>
       <a href="#contact">Contact</a>
       <button id="lang-toggle">EN</button>
     </nav>
@@ -67,10 +88,9 @@ footer{max-width:var(--maxw);margin:38px auto 80px;padding:18px 28px;color:var(-
 <main class="wrap">
   <section class="hero" aria-labelledby="hero-title">
     <div class="hero-left">
-      <h1 id="hero-title">Des services fiscaux rapides — directement en ligne</h1>
-      <p>Attestation de Conformité Fiscale (ACF), Immatriculation fiscale (NIU), Télédéclaration IRPP et Paiement des impôts au Cameroun.</p>
+      <h1 id="hero-title">Services fiscaux en ligne rapides et sécurisés au Cameroun</h1>
+      <p>Online Buro vous accompagne pour vos démarches fiscales : Attestation de Conformité Fiscale (ACF), Immatriculation fiscale (NIU), Télédéclaration IRPP et Paiement des impôts.</p>
       <div class="cta-row">
-        <!-- bouton de contact général (message générique) -->
         <button class="btn-primary" id="contact-whatsapp">Contacter via WhatsApp</button>
         <button class="btn-outline" onclick="document.querySelector('#services').scrollIntoView({behavior:'smooth'})">Voir les services</button>
       </div>
@@ -78,6 +98,7 @@ footer{max-width:var(--maxw);margin:38px auto 80px;padding:18px 28px;color:var(-
   </section>
 
   <section id="services" class="services-grid">
+    <!-- Vos cartes de services existantes -->
     <a href="acf.html" class="service-card" aria-label="ACF">
       <div class="service-head">
         <div style="width:44px;height:44px;border-radius:8px;background:linear-gradient(135deg,#007a5e,#ce1126);display:flex;align-items:center;justify-content:center;color:white;font-weight:700">AC</div>
@@ -110,6 +131,16 @@ footer{max-width:var(--maxw);margin:38px auto 80px;padding:18px 28px;color:var(-
       <div class="doc-window"><img src="images/impots.jpg" alt="Aperçu paiement" class="doc-img"></div>
     </a>
   </section>
+
+  <section id="faq" style="margin-top:40px">
+    <h2>Questions fréquentes (FAQ)</h2>
+    <h3>Comment obtenir un Numéro d’Identification Unique (NIU) ?</h3>
+    <p>Nous vous assistons dans la procédure officielle auprès des services fiscaux camerounais pour l’obtention rapide de votre NIU.</p>
+    <h3>Comment déclarer l’IRPP en ligne ?</h3>
+    <p>Via notre service <a href="irpp.html">Télédéclaration IRPP</a>, vous pouvez soumettre vos revenus facilement et en toute sécurité.</p>
+    <h3>Comment payer mes impôts ?</h3>
+    <p>Consultez notre page <a href="impots.html">Paiement des impôts en ligne</a> pour un accompagnement complet.</p>
+  </section>
 </main>
 
 <footer id="contact">
@@ -125,10 +156,7 @@ footer{max-width:var(--maxw);margin:38px auto 80px;padding:18px 28px;color:var(-
 <div class="whatsapp-badge" id="wh-badge"><span>WhatsApp</span></div>
 
 <script>
-/* numéro à modifier si besoin */
 const PHONE = "237698716497";
-
-/* messages pour chaque action */
 const messages = {
   acf: "Je souhaite obtenir une Attestation de Conformité Fiscale (ACF).",
   niu: "Je souhaite obtenir une immatriculation fiscale (NIU).",
@@ -136,37 +164,31 @@ const messages = {
   impots: "Je souhaite télédéclarer / payer mes impôts.",
   contact: "Bonjour, je veux des informations sur vos services fiscaux."
 };
-
 function sendWhatsAppKey(key){
   const txt = messages[key] || messages.contact;
   const url = `https://wa.me/${PHONE}?text=${encodeURIComponent(txt)}`;
   window.open(url, "_blank");
 }
-
-/* boutons */
 document.getElementById('wh-badge').addEventListener('click', () => sendWhatsAppKey('contact'));
 document.getElementById('contact-whatsapp').addEventListener('click', () => sendWhatsAppKey('contact'));
 document.getElementById('footer-contact').addEventListener('click', () => sendWhatsAppKey('contact'));
 
-/* simple i18n switch (garde ton code existant si tu veux) */
 const translations = {
   fr: {
-    hero_title: "Des services fiscaux rapides — directement en ligne",
-    hero_desc: "Attestation de Conformité Fiscale (ACF), Immatriculation fiscale (NIU), Télédéclaration IRPP et Paiement des impôts au Cameroun.",
+    hero_title: "Services fiscaux en ligne rapides et sécurisés au Cameroun",
+    hero_desc: "ACF, NIU, IRPP et Paiement des impôts — avec assistance rapide via WhatsApp.",
     contact_btn: "Contacter via WhatsApp",
     view_services: "Voir les services"
   },
   en: {
-    hero_title: "Fast tax services — directly online",
-    hero_desc: "Tax Compliance Certificate (ACF), Tax registration (NIU), IRPP e-filing and payments in Cameroon.",
+    hero_title: "Fast and secure tax services online in Cameroon",
+    hero_desc: "Tax Compliance Certificate (ACF), Tax registration (NIU), IRPP e-filing and tax payments — quick assistance via WhatsApp.",
     contact_btn: "Contact via WhatsApp",
     view_services: "View services"
   }
 };
-
 function applyLang(lang){
   document.documentElement.setAttribute("lang", lang);
-  // only a few elements here, extendable if tu veux plus tard
   if(lang === 'en'){
     document.querySelector('.hero h1').textContent = translations.en.hero_title;
     document.querySelector('.hero p').textContent = translations.en.hero_desc;
